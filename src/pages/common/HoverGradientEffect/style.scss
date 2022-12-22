@@ -1,0 +1,9 @@
+.element {
+    box-sizing: border-box;
+    &.hover {
+        border: 1px solid transparent;
+        border-image: radial-gradient(circle 100px at var(--hover-x, 0px) var(--hover-y, 0px), var(--hover-border-color, rgba(255, 255, 255, 0.5)), transparent);
+        border-image-slice: 1;
+        background: radial-gradient(circle 140px at var(--hover-x, 0px) var(--hover-y, 0px), var(--hover-bg-color, rgba(255, 255, 255, 0.1)), transparent);
+    }
+}

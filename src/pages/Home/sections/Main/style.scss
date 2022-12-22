@@ -1,0 +1,59 @@
+.main-section {
+    display: block;
+    background: url("./assets/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 140px 0px;
+    > .container {
+        display: flex;
+        justify-content: space-between;
+        > .left {
+            > .travel {
+                background: linear-gradient(-90.0deg, #ff3f04 0%, #ffffff 90%, #ffffff 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                margin-top: 80px;
+            }
+            > .to {
+                background: linear-gradient(-90.0deg, #ff3f04 0%, #ffffff 90%, #ffffff 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                margin-top: 10px;
+            }
+            > .start {
+                margin-top: 90px;
+            }
+        }
+    }
+    
+    @media (max-width: 900px) {
+        > .container > .left {
+            > .travel {
+                margin-top: 40px;
+            }
+            > .to {
+                margin-top: 5px;
+            }
+            > .start {
+                margin-top: 45px;
+            }
+        }
+    }
+
+    @media (max-width: 700px) {
+        padding-top: 140px;
+        padding-bottom: 120px;
+        > .container {
+            flex-direction: column;
+            gap: 40px;
+            > .left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}

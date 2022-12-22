@@ -1,0 +1,81 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    > .toggler {
+        display: none;
+        padding: 0px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        > .icon {
+            width: 32px;
+            height: 32px;
+        }
+    }
+    > .nav {
+        > .list {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            padding: 0px;
+            > .item {
+                > .link {
+                    color: white;
+                    text-decoration: none;
+                    font: 300 16px "Museo Sans Cyrl";
+                    transition: color 0.35s ease;
+                }
+                > .line {
+                    display: flex;
+                    position: relative;
+                    width: 0px;
+                    height: 1px;
+                    background: #3d3d3d;
+                    top: 7px;
+                    visibility: hidden;
+                    transition: width 0.65s ease;
+                }
+                &:hover {
+                    > .link {
+                        color: #7d7b7c;
+                    }
+                    > .line {
+                        visibility: visible;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1045px) {
+        > .toggler {
+            display: inline-flex;
+        }
+        > .nav {
+            position: fixed;
+            top: 100px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            z-index: 2;
+            padding: 40px;
+            &.hidden {
+                display: none;
+            }
+            > .list {
+                justify-content: center;
+                flex-wrap: wrap;
+                column-gap: 100px;
+            }
+        }
+    }
+    
+    @media (max-width: 475px) {
+        > .nav {
+            top: 76px;
+        }
+    }
+}

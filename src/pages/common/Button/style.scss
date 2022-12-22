@@ -1,0 +1,38 @@
+.button {
+    display: inline-flex;
+    position: relative;
+    font: 100 14px "Museo Sans Cyrl";
+    color: white;
+    cursor: pointer;
+    padding: 11px 25px; 
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid transparent;
+    border-image: linear-gradient(189.0deg, #263e66 20%, #09213d 40%, #111f2d 61%, #23599c 79%);
+    border-image-slice: 1;
+    --hover-border-color: #23599c;
+    --hover-bg-color: rgba(35, 89, 156, 0.3);
+    &::before,
+    &::after {
+        display: inline-flex;
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        image-rendering: pixelated;
+        content: "";
+    }
+    &::before {
+        bottom: -2px;
+        left: -2px;
+        background: url("./assets/highlight-left.png");
+    }
+    &::after {
+        top: -2px;
+        right: -2px;
+        background: url("./assets/highlight-right.png");
+    }
+
+    @media (max-width: 900px) {
+        padding: 10px 18px; 
+        font-size: 13px;
+    }
+}
