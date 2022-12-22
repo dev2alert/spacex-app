@@ -1,8 +1,10 @@
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/68344264/203784926-d4feb68d-9576-4a72-8fa6-d5b083760f1d.png" width="200" />
+    <a href="https://spacex-dev2alert.surge.sh/"><img src="https://user-images.githubusercontent.com/68344264/209218085-69d2d39a-d8e0-4456-8efd-8506f440d34c.png" width="800" /></a>
 </p>
-<h1 align="center">React app</h1>
-<p align="center">React Startup Application.</p>
+<h1 align="center">SpaceX app</h1>
+<p align="center">
+    <a href="https://spacex-dev2alert.surge.sh/"><img src="https://img.shields.io/static/v1?label=demo&message=link&color=orange" /></a>
+</p>
 
 <h2>Installing</h2>
 <p>Preliminary requirements:</p>
